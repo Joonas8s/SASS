@@ -1,0 +1,13 @@
+Sass-ominaisuudet projektissa
+
+Tässä projektissa on käytetty seuraavia Sass-ominaisuuksia:
+
+- Muuttujat: Värit, fontit ja mitat on määritelty tiedostossa _variables.scss.
+- Mixin ja include: Yleisiä tyylejä, kuten nappi, container ja media queryt, on toteutettu mixineinä tiedostossa _mixins.scss ja otettu käyttöön @include-komennolla.
+- Sisäkkäiset valitsijat ja &-parent: Layoutin ja komponenttien tyyleissä (_layout.scss) on käytetty sisäkkäisiä valitsijoita ja &-parentia.
+- Osittaiset tiedostot ja import: Tyylit on jaettu osittaisiin tiedostoihin ja tuotu pääsisäänmenoon style.scss-tiedostossa @import-komennolla.
+- Funktiot ja operaattorit: Värioperaatioita kuten darken ja lighten on käytetty mm. mixineissä.
+- Responsiivisuus: Grid-asettelu ja sivupalkki on toteutettu responsiivisesti media query -mixinilla (_mixins.scss ja _layout.scss).
+- Komponentit: Nappi, hero, card ja muut käyttöliittymäkomponentit on tyylitelty omilla Sass-säännöillään.
+
+Kaikki vaaditut Sass-ominaisuudet on toteutettu projektin SCSS-tiedostoissa.
