@@ -1,0 +1,78 @@
+
+@mixin btn($bg, $color) {
+  background: $bg;
+  color: $color;
+  border-radius: $border-radius;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  &:hover {
+    background: darken($bg, 10%);
+  }
+}
+
+@mixin container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: 900px) { @content; }
+  }
+  @else if $breakpoint == mobile {
+    @media (max-width: 600px) { @content; }
+  }
+}
+
+@function shade($color, $percent) {
+  @return darken($color, $percent);
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  background: $secondary-color;
+  padding: 1rem;
+  border-radius: $border-radius;
+  @include respond(mobile) {
+    margin-top: 2rem;
+  }
+}
+
+
+.btn-primary {
+  @include btn($primary-color, white);
+}
+.btn-secondary {
+  @include btn($secondary-color, $primary-color);
+}
+
+.hero {
+  background: $secondary-color;
+  padding: 4rem 0;
+  text-align: center;
+  h2 {
+    font-size: 2.5rem;
+    color: $primary-color;
+  }
+}
+
+.card {
+  background: white;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}

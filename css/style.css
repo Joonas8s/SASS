@@ -1,0 +1,86 @@
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  background: #f5e9e2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+@media (max-width: 600px) {
+  .sidebar {
+    margin-top: 2rem;
+  }
+}
+
+.btn-primary {
+  background: #05cc33;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: rgb(3.7799043062, 154.2200956938, 38.5550239234);
+}
+
+.btn-secondary {
+  background: #f5e9e2;
+  color: #05cc33;
+  border-radius: 0.5rem;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-secondary:hover {
+  background: rgb(231.9230769231, 204.2307692308, 188.0769230769);
+}
+
+.hero {
+  background: #f5e9e2;
+  padding: 4rem 0;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  color: #05cc33;
+}
+
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.site-header {
+  background: #05cc33;
+  color: white;
+}
+.site-header .logo {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+.site-header .logo span {
+  color: #f5e9e2;
+}
+.site-header .main-nav .nav-link {
+  color: white;
+}
+.site-header .main-nav .nav-link.is-active {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+
+.site-header {
+  background: $primary-color;
+  color: white;
+  .logo {
+    font-family: $font-main;
+    span {
+      color: $secondary-color;
+    }
+  }
+  .main-nav {
+    .nav-link {
+      color: white;
+      &.is-active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
